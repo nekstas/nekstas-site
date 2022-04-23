@@ -70,9 +70,9 @@ class CountLines:
 def main():
     count_lines = CountLines(
         CountItem('.py', 'Python файлы', '#'),
-        CountItem('.html', 'Python файлы', ''),
-        CountItem('.css', 'Python файлы', ''),
-        CountItem('.js', 'Python файлы', '//'),
+        CountItem('.html', 'HTML файлы', ''),
+        CountItem('.css', 'CSS файлы', ''),
+        CountItem('.js', 'JS файлы', '//'),
         ignored_folders=('.git', '.idea', 'venv')
     )
     count_lines.count(config.PROJECT_ROOT)
