@@ -6,6 +6,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# Информационные параметры
+PROJECT_NAME = 'nekstas.ru'
+
 # Режим отладки
 DEBUG_MODE = bool(os.environ.get('DEBUG_MODE', False))
 
@@ -24,4 +27,3 @@ TEMPLATE_FOLDER = os.path.join(FRONTEND_FOLDER, 'templates')
 
 # Некоторые URL
 STATIC_URL_PATH = '/static'
-
